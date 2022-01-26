@@ -5,14 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather App</title>
+
+    <style>
+      * {
+        margin: 0;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        box-sizing: border-box;
+      }
+
+      #main {
+        text-align: center;
+        padding-top: 10%;
+      }
+
+      input[type="text"] {
+        width: 30%;
+        padding: 10px;
+        border: 4px solid black;
+        margin-top: 0.5%;
+      }
+
+      input[type="submit"] {
+        width: 15%;
+        padding: 10px;
+        border: 4px solid black;
+        margin-top: 0.5%;
+        background-color: black;
+        color: white;
+        cursor: pointer;
+        text-transform: uppercase;
+      }
+    </style>
   </head>
   <body>
-    <h1>FIND THE WEATHER</h1>
+    <div id="main">
+      <h1>FIND THE WEATHER</h1>
 
-    <form method="GET">
-      <label for="city"></label>
-      <input type="text" name="city" id="city" placeholder="city..." />
-      <input type="submit" value="submit" />
-    </form>
+      <form method="GET">
+        <label for="city"></label>
+        <input type="text" name="city" id="city" placeholder="city..." /><br />
+        <input type="submit" value="submit" />
+      </form>
+    </div>
   </body>
 </html>

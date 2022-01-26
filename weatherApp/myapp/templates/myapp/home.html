@@ -30,6 +30,7 @@
         padding: 10px;
         border: 4px solid black;
         margin-top: 0.5%;
+        margin-bottom: 1.5%;
         background-color: black;
         color: white;
         cursor: pointer;
@@ -43,9 +44,22 @@
 
       <form method="GET">
         <label for="city"></label>
-        <input type="text" name="city" id="city" placeholder="city..." /><br />
+        <input
+          type="text"
+          name="city"
+          id="city"
+          value="{{request.GET.city}}"
+          placeholder="city..."
+        /><br />
         <input type="submit" value="submit" />
       </form>
+
+      {% if weather %}
+      <h3>{{weather.region}}</h3>
+      <h3>{{weather.dayhour}}</h3>
+      <h3>{{weather.temp_now}}</h3>
+      <h3>{{weather.weather_now}}</h3>
+      {% endif %}
     </div>
   </body>
 </html>

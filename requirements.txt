@@ -28,7 +28,6 @@ incremental==21.3.0
 itemadapter==0.4.0
 itemloaders==1.0.4
 jmespath==0.10.0
-keras==2.6.0
 lxml==4.7.1
 numpy==1.19.4
 outcome==1.1.0
@@ -45,8 +44,6 @@ pyOpenSSL==21.0.0
 python-dateutil==1.5
 queuelib==1.6.2
 requests==2.27.1
-Scrapy==2.5.1
-selenium==4.1.0
 service-identity==21.1.0
 six==1.16.0
 sniffio==1.2.0
@@ -55,8 +52,6 @@ soupsieve==2.3.1
 sqlparse==0.4.2
 trio==0.19.0
 trio-websocket==0.9.2
-Twisted==21.7.0
-twisted-iocpsupport==1.0.2
 typing_extensions==4.0.1
 tzdata==2021.5
 urllib3==1.26.8
